@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+
+html { height: 100%;}
+
+body {
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url('images/bg-pattern-top.svg') top -500px left -300px no-repeat, url('images/bg-pattern-bottom.svg') bottom -600px right -200px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card__profile-img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+}
+
+.card__info {
+    padding: 20px 0;
+}
+
+.card__info--name {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.card__info--age {
+    color: hsl(227, 10%, 46%);
+}
+
+.card__info--address {
+    padding-top: 10px;
+    color: hsl(227, 10%, 46%);
+}
+
+.card__content {
+    border-bottom: 1px solid #DCDCDC;
+}
+.card__footer {
+    padding: 30px 20px;
+}
+
+.card__stats {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card__stats--heading {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.card__stats--text {
+    color: hsl(0, 0%, 59%);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.attribution {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 70px;
+
+}
+@media only screen and (max-width: 769px) {
+    body {
+        background: url('images/bg-pattern-top.svg') top -600px left -500px no-repeat, url('images/bg-pattern-bottom.svg') bottom -700px right -400px no-repeat;
+        background-color: hsl(185, 75%, 39%);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .card {
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        background: url('images/bg-pattern-top.svg') top -700px left -650px no-repeat, url('images/bg-pattern-bottom.svg') bottom -600px right -700px no-repeat;
+        background-color: hsl(185, 75%, 39%);
+    }
+
+    .card {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .card {
+        width: 300px;
+    }
+}
